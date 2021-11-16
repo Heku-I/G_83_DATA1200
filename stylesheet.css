@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* NAVIGATION BAR */ 
 
 .navBar{
 display: flex;
@@ -12,5 +13,5 @@ text-decoration: none;
 .navBar ul{
 display: flex;
 flex-direction: column;
-
 }
+
