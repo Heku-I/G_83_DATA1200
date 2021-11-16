@@ -3,14 +3,11 @@
 Notater: 
 
 Farge: Grønn, blå og svart.
-
-
-
+Font: ***
 
 
 
 Oppgave: 
-
 
 Your website will contain the following pages:
 1. Welcome! (index.html): this page should be a general information page
@@ -41,7 +38,7 @@ testing site and of your code. We shall read this text! While the content of
 your page is but a minor part of the assessment, this is the text that we
 are certain to read. (Grammar not important.)
 
-4. Topical information page: Technology and society (with external links):
+4. Topical information page: Technology and society (with external links)
 Write – or re-use a short text you have previously written – (anywhere
 from 300 to 1000 words) about technology and society. You are allowed
 to reuse text from "DATA1100 Technology and Society for Programmers"
@@ -53,12 +50,43 @@ be easy to understand before clicking what information you lead us to.
 5. Fun page: Make one page that is in a different layout and have a
 different styling than the others. Put in some text and images. We accept
 place-holder text, but don’t use copyrighted images. Or you can present
-an activity or a place in Oslo. This page is an opportunity to be creative
-and shine. You may embed video or sound, but again: beware of
+an activity or a place in Oslo. This page is an opportunity to be creative and shine. You may embed video or sound, but again: beware of
 copyright, please! Don’t forget to consider the size of the media files
 (videos or pictures). 
 
 
-Other requirements/tips: 
+How we shall grade: 
 
+• Structure and navigation, wide screen and small screens: Are the pages
+well structured (with headings, paragraphs, images) and is it easy to
+navigate between the pages? We shall check this on different screens.
+
+• Accessibility and legibility: We shall look both at the automated test and
+use our experience to assess how well designed the pages are. (The
+«Fun page!» Is not part of "Accessibility"-assessment.) Your description
+will assist us in understanding the choices you have made.
+
+• Ease of maintenance: Is the code easy to maintain for a new developer?
+Can someone else take over your work and modify, change, and further
+develop this site using their IDE of choice (rather than the one you
+used)? We shall look at the code itself. Is it well-structured and easy to read? Are you following conventions for comments? Is the CSS well
+organised with each element styled only once (if possible)? Is the
+structural code (like boxes) separate from code that define the visuals?
+Et cetera.
+
+• The text "Short presentation of accessibility". Have you done an
+automated test? Were you able to comprehend the results? Have you
+reflected on accessibility beyond automated tests? And does the entire
+site appear coherent, as a site of pages, rather than fragmented texts
+without a common theme?
+
+• We accept reuse of code from you obligatory assignments.
+
+• If you reuse code from other resources, please no more than 5 lines of
+code, and be sure to cite (include a comment to reference the original
+resource or website).
+
+• Remember not to include any personal information in the text, as these
+are public sites and GitHub servers are located outside the GDPR/ EU
+jurisdiction.
 
