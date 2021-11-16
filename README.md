@@ -1,9 +1,13 @@
 # G_83_DATA1200
 
+FRIST: 26.11.21 
+
+
 Notater: 
 
 Farge: Grønn, blå og svart.
 Font: ***
+
 
 
 

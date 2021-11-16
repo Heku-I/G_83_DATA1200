@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navBar{
+display: flex;
+text-decoration: none;
+}
+
+.navBar ul{
+display: flex;
+flex-direction: column;
+
+}
