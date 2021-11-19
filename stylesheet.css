@@ -8,45 +8,74 @@
 .navContainer{
 display: flex;
 padding: 2em 3em;
-background-color: aqua;
+background-color: rgb(19, 19, 19);
 justify-content: space-between;
 flex-direction: row;
 border-bottom-style: solid;
 border-width: 20px;
-border-color: red;
+border-color: green;
 }
 
 .navLogo{
-    align-self: flex-start;
-    width: 50px;
+    align-self: flex-end;
+    width: 100px;
     height: auto;
 }
 
-.navigationList{
+.navigationListLeft{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
 list-style: none;
 gap: 2em;
-align-self: end;
-flex: 3;
-
+align-self: start;
+flex: 1;
 }
-.navigationList a{
-    color: black;
+
+
+.navigationListLeft a{
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
-   
 }
 
-.navigationList a:hover{
+
+.navigationListLeft a:hover{
     color: red;
     transition: 500ms;
 }
-.navigationList a:hover::before{
+.navigationListLeft a:hover::before{
     width: 5%;
     transition: 1s;
 }
+
+.navigationListRight{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1em;
+    align-self: flex-start;
+    flex: 1;
+}
+
+.navigationListRight a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: end;
+}
+
+.navigationListRight a:hover{
+    color: red;
+    transition: 500ms;
+}
+.navigationListRigth a:hover::before{
+    width: 5%;
+    transition: 1s;
+}
+
 
 
 /* FOOTER BELOW */ 
@@ -61,16 +90,23 @@ flex: 3;
 .indexContainer{
     display: flex;
     justify-content: center;
-    background-color: green;
-
+    flex-direction: column;
+    align-items: center;
+    background-color:silver;
 }
 
-.indexBackground{
-    background-image: url(/assets.html/indexBackgroundImage.jpg);
-    background-size:contain;
-    height: 100vh;
-    background-repeat: no-repeat;
+.indexImage{
+    width: 500px;
+    height: auto;
     opacity: 0.75;
-    
+}
 
+#down{
+    border: solid black 2px;
+    background-color: aquamarine; 
+    opacity: 0.75;
+}
+#down:hover{
+    opacity: 1;
+    color: red;
 }
