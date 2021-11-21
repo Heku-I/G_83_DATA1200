@@ -12,6 +12,7 @@ background-color: rgb(255, 255, 255);
 flex-direction: column;
 border-width: 2px;
 border-color: rgb(0, 0, 0);
+border-bottom: 2px solid black;
 }
 
 .navLogo{
@@ -25,8 +26,8 @@ display: flex;
 flex-direction: row;
 list-style: none;
 gap: 1em;
-align-self: start;
 align-self: center;
+border-width: 2px;
 }
 
 .navigationList img{
@@ -47,10 +48,7 @@ align-items: center;
     color: brown;
     transition: 500ms;
 }
-.navigationList a:hover::before{
-    width: 5%;
-    transition: 1s;
-}
+
 
 
 
@@ -76,8 +74,20 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    margin-top: 2em;
+    gap: 2em;
 }
+
+#headline h1{
+    font-size: 32px;
+    font-family: sans-serif /* Font family må endres */ 
+}
+
+#headline p{
+    font-size: 24px;
+    font-family: sans-serif /* Font family må endres */ 
+}
+
 
 .indexImage{
     width: 500px;
