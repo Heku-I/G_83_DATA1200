@@ -107,6 +107,10 @@ align-items: center;
     color: red;
 }
 
+.figure {
+max-width: 100 px;
+height: auto;
+}
 
 /* TOPICAL INFORMATION */ 
 
