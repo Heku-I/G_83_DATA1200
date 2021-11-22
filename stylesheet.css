@@ -79,7 +79,6 @@ align-items: center;
     flex-direction: column;
     color: white;
     background-color: #171717;
-    margin-top: 2em;
     align-self: center;
     
     
@@ -102,7 +101,7 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     background-color:rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #headline{
@@ -118,45 +117,59 @@ align-items: center;
 }
 
 #headline p{
-    font-size: 24px;
+    font-size: 20px;
 
 }
 
-
 .indexImage{
+    font-family:'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 2em 0em;
+}
+
+.indexImage img{
+  margin-top: 2em;
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: bottom;
-
 }
 
-#under{
+.under{
     display: flex;
+    font-family:'Montserrat', sans-serif;
    
 }
 
-#under ul{
+.under ul{
     display: flex;
     flex-direction: row;
     margin-top: 1.5em;
     gap: 3em;
 }
-#under li{
+.under li{
     display: flex;
     flex-direction: row;
-    opacity: 0.9;
-}
-#under a{
-    border: black solid 2px;
     background-color: #0F1626;
+    min-width: 180px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.under a{
     text-decoration: none;
     color: #F5F5F5;
     font-size: 24px;
-    text-transform: uppercase;
     border-radius: 10%;
+    font-weight: bold;
 }
 
-#under a:nth-of-type(2){
-    background-color: red;
+.under li:last-of-type{
+    border: #0F1626 3px solid;
+    background-color: white;
+}
+
+.under li:last-of-type a{
+    color: #0F1626;
+    
 }
