@@ -349,8 +349,10 @@ opacity: 1;
 }
 
 .articleWithImage p{
-    flex-basis: 150%;
-
+    flex: 20;
+}
+figure{
+flex-basis: 400%;
 }
 
 }
