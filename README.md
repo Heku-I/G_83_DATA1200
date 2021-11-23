@@ -5,13 +5,21 @@ FRIST: 26.11.21
 
 Notater: 
 
-Farge: Grønn, blå og svart.
-Font: ? 
+Farge: Neon-grønn, grå og hvit. 
+Font: Montserrat, sans-serif 
+
+
+[OK] Har laget alle sidene med relevant innhold. ** Mangler tekst på refleksjon ** 
+[X] God struktur på siden. 
+[X] Lett navigerbar
+[X] Er siden responsive?
+[X] Kjøre automated test. Noen feilmeldinger? 
+[X]  Er koden strukturert godt? Er den forståelig? 
 
 
 
 
-Oppgave: 
+TASK: 
 
 Your website will contain the following pages:
 1. Welcome! (index.html): this page should be a general information page
