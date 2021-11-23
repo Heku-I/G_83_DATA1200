@@ -56,6 +56,7 @@ justify-content: space-evenly;
 .navigationList li:nth-of-type(5){
     background-color: #BCFD4C;     /*rød  #FF533D; */ 
     border-radius: 5%;
+    opacity: 0.9;
 }
 .navigationList li:last-of-type a {
     color:#6E6E6E;
@@ -66,18 +67,17 @@ justify-content: space-evenly;
 display: flex;
 color:#BCFD4C;
 text-decoration: none;
-
 align-items: center;
 }
 
-.navigationList a:hover{
-    transition: ease-in-out 2s;
+.navigationList li:hover a{
+text-decoration: overline 3px;
 }
-
-.navigationList ul li.active-link>a{
-    border-bottom: 1px solid #BCFD4C;
-    color:#BCFD4C;
-    padding-bottom:1px;
+.navigationList li:last-of-type:hover a{
+    text-decoration: none;
+}
+.navigationList li:last-of-type:hover{
+    opacity: 1;
 }
 
 
@@ -90,6 +90,7 @@ align-items: center;
     color: black;
     background-color: #BCFD4C;
     align-content: center;
+    padding: 1em 0;
     }
 
     
@@ -97,6 +98,8 @@ align-items: center;
         align-self: center;
     }
 
+
+/* -- INDEX PAGE -- */ 
 
 /* MAIN CONTENT BELOW */ 
 
@@ -138,7 +141,7 @@ align-items: center;
 }
 .indexImage a{
     text-decoration: none;
-    color: whitesmoke;
+    color:#BCFD4C;
     font-weight: bold;
 }
 
@@ -193,4 +196,63 @@ align-items: center;
 
 .under li:hover{
 opacity: 1;
+}
+
+/* -- TOPICAL INFORMATION PAGE -- */ 
+
+.informationContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #6E6E6E;
+    color: white;
+    font-family: 'Montserrat, sans-serif';
+    gap: 2em;
+    padding: 1em 1em;
+}
+
+
+
+.activePage{ /* Also used for Accessability and reflection page */
+    display: flex;
+    background-color: #BCFD4C;
+    color: #6E6E6E;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.informationText{
+    margin-top: 2em;
+    gap: 2em;
+
+}
+
+.informationText p{
+    margin: 1em;
+}
+
+.informationText a{
+    color: #BCFD4C;
+}
+.informationText a:hover{
+    text-decoration: none;
+}
+
+
+/* -- ACCESSABILITY ESSAY PAGE -- */ 
+
+
+
+
+
+
+
+/* -- REFLECTION ESSAY PAGE -- */ 
+
+.informationContainer img{
+    margin-top: 2em;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
 }
