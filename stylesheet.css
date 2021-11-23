@@ -264,7 +264,7 @@ opacity: 1;
 @media screen and (min-width:1440px) { /*Adjusting responsiveness for large laptop screen */ 
     .under{
         display: flex;
-        margin-top: 35%;
+        margin-top: 30%;
     }
     #headline{
         justify-content: center;
@@ -335,4 +335,28 @@ opacity: 1;
     height: auto;
     object-fit: cover;
     object-position: bottom;
+}
+
+@media screen and (min-width: 1024px)  { /*For small laptop screen */ 
+
+.articleWithImage{
+    display: flex;
+
+}
+
+.articleWithImage img{
+    margin-top: 0;
+}
+
+.articleWithImage p{
+    flex-basis: 150%;
+
+}
+
+}
+
+
+@media screen and (min-width:1440px) { /*For large laptop screen */ 
+    
+
 }
