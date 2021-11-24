@@ -342,6 +342,7 @@ opacity: 1;
 .articleWithImage{
     display: flex;
     flex-direction: row;
+    gap: 2em;
 }
 .articleWithImage:last-of-type{
     flex-direction: row-reverse;
@@ -358,11 +359,31 @@ figure{
 flex-basis: 400%;
 }
 
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.conclusion{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 10%;
+
+}
+
+
 
 }
 
 
 @media screen and (min-width:1440px) { /*For large laptop screen */ 
     
+
+
+
 
 }
