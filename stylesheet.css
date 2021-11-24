@@ -341,7 +341,10 @@ opacity: 1;
 
 .articleWithImage{
     display: flex;
-
+    flex-direction: row;
+}
+.articleWithImage:last-of-type{
+    flex-direction: row-reverse;
 }
 
 .articleWithImage img{
@@ -354,6 +357,7 @@ opacity: 1;
 figure{
 flex-basis: 400%;
 }
+
 
 }
 
