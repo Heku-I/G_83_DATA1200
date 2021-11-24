@@ -31,6 +31,22 @@ h1 {             /* Må korrigeres */
     font-weight: 400;
   }
 
+
+  @media screen and (min-width: 1024px) {
+      p{
+          font-size: 17px;
+      }      
+  }
+
+  @media screen and (min-width: 1440px) {
+    p{
+        font-size: 18px;
+    }    
+}
+
+
+
+
 /* NAVIGATION BAR BELOW */ 
 
 .navContainer{
@@ -374,8 +390,6 @@ flex-basis: 400%;
     padding: 0 10%;
 
 }
-
-
 
 }
 
