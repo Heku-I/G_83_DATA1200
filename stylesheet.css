@@ -378,20 +378,93 @@ flex-basis: 400%;
 
 /* -- FUN PAGE -- */ 
 
-.funHeader{
-    display: flex;
-    flex-direction: column;
-    background-color:#6E6E6E;
+
+body, html{
+    height: 100%;
 }
 
-.funNav{
-    padding-top: 2em;
-    border-top: black solid 2px;
+.mainFunContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(/assets.html/BackgroundImage.jpg);
+background-repeat: no-repeat;
+background-color: rgb(192, 225, 236); /*Replacement background-color*/ 
+height: 100%;
+
+/* Perfecting the background image */ 
+
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+}
+
+/*The browser size*/
+.browserContainer{
+    background-color: #6E6E6E;
+    height: 60%;
+    width: 95%;
+}
+
+/*Adjusting the browser width for larger resolution*/ 
+@media screen and (min-width:1024px) {
+    .browserContainer{
+        width: 70%;
+    }
+}
+
+/*Styling the browser*/
+
+.topBrowser{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #796f68;
+    justify-content: space-between;
+}
+
+.tabs{
+    display: flex;
+    border-right:#bdb9b5 1px solid;
+    padding-right: 15px;
+    color: #bdb9b5 ;
+    height: 25px;
+}
+.tabs img{
+    height: 30px;
+    width: auto;   
+}
+
+.searchBar{
+    display: flex;
+    background-color: #35363a;
+    padding-bottom: 1px;
+    border-bottom: #494a4b solid 2px;
+    height: 30px;
+}
+input{
+    all: unset;
+    color: #bdb9b5;
+    width:100%;
+}
+
+/*Styling the page inside the browser container */ 
+
+.browserPageContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #6E6E6E;
+    color: #BCFD4C;
+    overflow: auto;
+    overflow-y:auto;
+    height: 550px;
 }
 
 .creds{
     display: flex;
-    align-self:flex-end;
+    align-self:flex-start;
     flex-wrap: wrap;
     position: sticky;
     overflow: hidden;
@@ -400,104 +473,72 @@ flex-basis: 400%;
 }
 .creds h2{
     font-size: 1rem;
-    border-bottom: black solid 2px;
+    border-bottom: black solid 1px;
 
 }
 
-.funNav li{
-    visibility: hidden;
-    padding-left: 1em;
-}
-.funNav li::first-letter{
-    visibility: visible;
-}
-
-.funNav a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;    
-}
-
-.funNav li:hover{
-    visibility: visible;
-    text-decoration: underline;
-}
-
-.funNav p{
-font-size: 3rem;
-}
-
-.funMainContainer{
-background-color:#6E6E6E;
-height: 80vh;
-
-}
-.names{
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    
-}
-.names h1{
-    font-size: 10.5rem;
-    color:#BCFD4C
-}
-
-/* Design for riddle */
-.mainContainer {
-  margin: 0 auto;
-  width: 50vw;
-  text-align: center;
-}
-
-.cardContainer {
-  border: 1px solid black;
-  font-size: 1.2em;
-}
-
-.hoverRiddle,
-.showAnswerOnHover {
-  background-color: gray;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  padding: 0.7em;
-}
-
-.clueRiddle, .answer{
-  font-size: 1.5em;
-  transition: all 1s;
-  opacity: 0;
-}
-
-.answerContainer img{
-    width: 50px;
-    height: auto;
-}
-
-.hoverRiddle:hover {
-  background-color: rgb(65, 65, 65);
-}
-
-.firstClue,
-.secondClue,
-.thirdClue,
-.answer {
-  opacity: 0;
-}
-
-.showClueOnHover1:hover ~ .firstClue,
-.showClueOnHover2:hover ~ .secondClue,
-.showClueOnHover3:hover ~ .thirdClue,
-.showAnswerOnHover:hover ~ .answer {
-  opacity: 1;
-}
-/* Makes the clue visible forever */
-.showClueOnHover1:not(:hover) ~ .firstClue,
-.showClueOnHover2:not(:hover) ~ .secondClue,
-.showClueOnHover3:not(:hover) ~ .thirdClue,
-.showAnswerOnHover:not(:hover) ~ .answer {
-  transition: all 20s;
-  opacity: 0;
-}
-/* End of functionalty for showing / hiding clues and answer */
+/* Design for riddle in the browser page */
+.riddleContainer {
+    margin: 0 auto;
+    width: 60vw;
+    text-align: center;
+  }
+  @media screen and (min-width:1024px){
+      .riddleContainer{
+          width: 35vw;
+      }
+      
+  }
+  
+  .cardContainer {
+    border: 1px solid black;
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  
+  .hoverRiddle,
+  .showAnswerOnHover {
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    padding: 0.7em;
+  }
+  
+  .clueRiddle, .answer{
+    font-size: 1.5em;
+    transition: all 1s;
+    opacity: 0;
+  }
+  
+  .answerContainer img{
+      width: 50px;
+      height: auto;
+  }
+  
+  .hoverRiddle:hover {
+    background-color: rgb(65, 65, 65);
+  }
+  
+  .firstClue,
+  .secondClue,
+  .thirdClue,
+  .answer {
+    opacity: 0;
+  }
+  
+  .showClueOnHover1:hover ~ .firstClue,
+  .showClueOnHover2:hover ~ .secondClue,
+  .showClueOnHover3:hover ~ .thirdClue,
+  .showAnswerOnHover:hover ~ .answer {
+    opacity: 1;
+  }
+  /* Makes the clue visible for 20 seconds */
+  .showClueOnHover1:not(:hover) ~ .firstClue,
+  .showClueOnHover2:not(:hover) ~ .secondClue,
+  .showClueOnHover3:not(:hover) ~ .thirdClue,
+  .showAnswerOnHover:not(:hover) ~ .answer {
+    transition: all 20s;
+    opacity: 0;
+  }
+  /* End of functionalty for showing / hiding clues and answer */
