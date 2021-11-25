@@ -53,7 +53,6 @@ h1 {             /* Må korrigeres */
 display: flex;
 background-color: #6E6E6E;
 flex-direction: column;
-
 font-family: 'Montserrat', sans-serif;
 }
 
@@ -70,6 +69,7 @@ display: flex;
 flex-direction: row;
 list-style: none;
 justify-content: space-evenly;
+
 }
 
 .navigationList li{
@@ -78,33 +78,6 @@ justify-content: space-evenly;
     height: 2em;
     padding: 1%;
     justify-content: center;
-    /*border: #BCFD4C 2px solid; */
-}
-.navigationList li:first-of-type{
-    background-color: #6E6E6E;
-    border-radius: 5%;
-
-}
-.navigationList li:nth-of-type(2){
-    background-color: #6E6E6E;
-    border-radius: 5%;
-}
-.navigationList li:nth-of-type(3){
-    background-color: #6E6E6E;     /* mørke blå #0F1626 */ 
-    border-radius: 5%;
-}
-.navigationList li:nth-of-type(4){
-    background-color:  #6E6E6E;    /* brun #AB987A; */ 
-    border-radius: 5%;
-}
-.navigationList li:nth-of-type(5){
-    background-color: #BCFD4C;     /*rød  #FF533D; */ 
-    border-radius: 5%;
-    opacity: 0.9;
-}
-.navigationList li:last-of-type a {
-    color:#6E6E6E;
-    font-weight: bold;
 }
 
 .navigationList a{
@@ -114,15 +87,17 @@ text-decoration: none;
 align-items: center;
 }
 
-.navigationList li:hover a{
-text-decoration: overline 3px;
+
+
+.activePage{
+    background-color: #BCFD4C;  
+    border-radius: 5%;
+    opacity: 0.9; 
 }
-.navigationList li:last-of-type:hover a{
-    text-decoration: none;
+.activePage a{
+    color: #6E6E6E;
 }
-.navigationList li:last-of-type:hover{
-    opacity: 1;
-}
+
 
 @media screen and (min-width: 1024px)  { /*For small laptop screen */ 
 
@@ -397,7 +372,132 @@ flex-basis: 400%;
 @media screen and (min-width:1440px) { /*For large laptop screen */ 
     
 
+}
 
 
+
+/* -- FUN PAGE -- */ 
+
+.funHeader{
+    display: flex;
+    flex-direction: column;
+    background-color:#6E6E6E;
+}
+
+.funNav{
+    padding-top: 2em;
+    border-top: black solid 2px;
+}
+
+.creds{
+    display: flex;
+    align-self:flex-end;
+    flex-wrap: wrap;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    margin-bottom: 6em;
+}
+.creds h2{
+    font-size: 1rem;
+    border-bottom: black solid 2px;
 
 }
+
+.funNav li{
+    visibility: hidden;
+    padding-left: 1em;
+}
+.funNav li::first-letter{
+    visibility: visible;
+}
+
+.funNav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;    
+}
+
+.funNav li:hover{
+    visibility: visible;
+    text-decoration: underline;
+}
+
+.funNav p{
+font-size: 3rem;
+}
+
+.funMainContainer{
+background-color:#6E6E6E;
+height: 80vh;
+
+}
+.names{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    
+}
+.names h1{
+    font-size: 10.5rem;
+    color:#BCFD4C
+}
+
+/* Design for riddle */
+.mainContainer {
+  margin: 0 auto;
+  width: 50vw;
+  text-align: center;
+}
+
+.cardContainer {
+  border: 1px solid black;
+  font-size: 1.2em;
+}
+
+.hoverRiddle,
+.showAnswerOnHover {
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 0.7em;
+}
+
+.clueRiddle, .answer{
+  font-size: 1.5em;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.answerContainer img{
+    width: 50px;
+    height: auto;
+}
+
+.hoverRiddle:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.firstClue,
+.secondClue,
+.thirdClue,
+.answer {
+  opacity: 0;
+}
+
+.showClueOnHover1:hover ~ .firstClue,
+.showClueOnHover2:hover ~ .secondClue,
+.showClueOnHover3:hover ~ .thirdClue,
+.showAnswerOnHover:hover ~ .answer {
+  opacity: 1;
+}
+/* Makes the clue visible forever */
+.showClueOnHover1:not(:hover) ~ .firstClue,
+.showClueOnHover2:not(:hover) ~ .secondClue,
+.showClueOnHover3:not(:hover) ~ .thirdClue,
+.showAnswerOnHover:not(:hover) ~ .answer {
+  transition: all 20s;
+  opacity: 0;
+}
+/* End of functionalty for showing / hiding clues and answer */
