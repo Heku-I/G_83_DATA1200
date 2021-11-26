@@ -18,7 +18,7 @@ Font: Montserrat, sans-serif
 
 
 Oppgaver til i morgen: 
-Fikse footer!!
+[OK]Fikse footer!!
 Gå gjennom det øverste på CSS-filen
 Rename noen klasser.
 Gjør siden enda mer responsive.
