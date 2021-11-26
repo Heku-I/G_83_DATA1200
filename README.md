@@ -17,6 +17,15 @@ Font: Montserrat, sans-serif
 [X]  Er koden strukturert godt? Er den forståelig? 
 
 
+Oppgaver til i morgen: 
+Fikse footer!!
+Gå gjennom det øverste på CSS-filen
+Rename noen klasser.
+Gjør siden enda mer responsive.
+Fikse bilde på information!
+Vurdere større fontstørrelse på større skjermer.
+Vurdere om å legge til bilder på Accessability. 
+Vurdere om å legge til tilbake "knapp" på fun-page. 
 
 
 TASK: 
