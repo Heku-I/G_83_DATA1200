@@ -4,7 +4,6 @@ DEADLINE: 26.11.21 17:00
 
 
 TASK: 
-
 Your website will contain the following pages:
 1. Welcome! (index.html): this page should be a general information page
 that helps the visitor understand what this site is, and navigate to the
