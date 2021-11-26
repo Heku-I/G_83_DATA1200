@@ -6,10 +6,6 @@ Link to github page:
 https://github.com/Donrani/G_83_DATA1200
 https://donrani.github.io/G_83_DATA1200/index.html
 
-Comments:
-I had to remove the images from folder because it did not upload well on Github. 
-
-
 
 TASK: 
 Your website will contain the following pages:

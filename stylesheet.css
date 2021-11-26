@@ -1,18 +1,18 @@
-/*Overall setting*/ 
+/*Overall setting*/
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-/* Setting height and background color for safety on body and html */ 
+/* Setting height and background color for safety on body and html */
 body,
 html {
   height: 100%;
   background-color: #bcfd4c;
 }
 
-/*Setting general font-size for headers */ 
+/*Setting general font-size for headers */
 h1 {
   font-size: 3rem;
 }
@@ -33,11 +33,11 @@ h5 {
   font-size: 1.25rem;
 }
 
-/* Further general adjustments on the font */ 
+/* Further general adjustments on the font */
 h1,
 h2,
 h3,
-h4{
+h4 {
   margin: 0 0 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -53,7 +53,7 @@ body {
   font-weight: 400;
 }
 
-/* Adjusting for larger screen */ 
+/* Adjusting for larger screen */
 @media screen and (min-width: 1024px) {
   p {
     font-size: 18px;
@@ -66,7 +66,6 @@ body {
   }
 }
 
-
 /* NAVIGATION BAR BELOW 
 (For index, topicalinformation, accessability and reflection) */
 
@@ -77,15 +76,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.UpperNav { 
+.UpperNav {
   margin: 1em 0;
   align-self: center;
   height: 2.5em;
   font-size: 24px;
   color: white;
 }
-.UpperNav::first-letter{
-    color:#bcfd4c;
+.UpperNav::first-letter {
+  color: #bcfd4c;
 }
 
 .navigationList {
@@ -153,8 +152,8 @@ body {
   font-weight: bold;
 }
 
-.jigsawValidator{
-    flex-direction: row;
+.jigsawValidator {
+  flex-direction: row;
 }
 
 /* mainContainer 
@@ -172,7 +171,7 @@ body {
 .mainContainer img {
   margin-top: 2em;
   width: 100%;
-  height:auto;
+  height: auto;
   object-fit: cover;
   object-position: bottom;
 }
@@ -217,7 +216,7 @@ body {
   object-position: bottom;
 }
 
-/* Styling the links in index page */ 
+/* Styling the links in index page */
 .mainLinks {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -270,7 +269,6 @@ body {
     margin-top: 1.5em;
     align-self: flex-start;
     flex: 5;
-
   }
   .indexImage {
     flex: 4.5;
@@ -322,7 +320,7 @@ body {
 
 /*Adjusting responsiveness for larger screen */
 @media screen and (min-width: 1024px) {
-  .infoArticle{
+  .infoArticle {
     margin: 4em 10vw;
   }
 }
@@ -368,7 +366,6 @@ body {
     margin: 2em 0 3em;
   }
 }
-
 
 /* -- SPECIFICS FOR FUN PAGE BELOW -- */
 
@@ -501,10 +498,9 @@ input {
 }
 
 @media screen and (max-height: 820px) {
-  .browserPageContainer{
+  .browserPageContainer {
     height: 35em;
   }
-  
 }
 
 /* Design for riddle in the browser page */
