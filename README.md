@@ -11,7 +11,7 @@ Font: Montserrat, sans-serif
 
 [OK] Har laget alle sidene med relevant innhold. ** Mangler tekst på refleksjon ** 
 [X] God struktur på siden. 
-[X] Lett navigerbar
+[OK] Lett navigerbar
 [X] Er siden responsive?
 [X] Kjøre automated test. Noen feilmeldinger? 
 [X]  Er koden strukturert godt? Er den forståelig? 
