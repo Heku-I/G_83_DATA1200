@@ -1,103 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Fun2</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>FunP</title>
 </head>
-<body>
+    <body>
+
+    <div class="mainFunContainer">
+
+        <!---NAVIGATION MENU BELOW-->
+
+        <nav class="funNavigation">
+
+            <ul class="funNavLinks">
+                <li><a href="index.html"><img src="/assets.html/folder.png" alt="Folder">Home</a></li>
+                <li><a href="topicalinformation.html"><img src="/assets.html/folder.png" alt="Folder">Information</a></li>
+                <li><a href="accessability.html"><img src="/assets.html/folder.png" alt="Folder">Accessability</a></li>
+                <li><a href="reflection.html"><img src="/assets.html/folder.png" alt="Folder">Reflection</a></li>
+                <li><a href="funpage2.html"><img src="/assets.html/folder.png" alt="Folder">Fun</a></li>
+            </ul>
+
+
+
+        </nav>
+
+
+
+
+        <!----MAIN CONTENT BELOW-->
     
-<div class="mainFunContainer">
 
-    <div class="funNavBar">
 
-    </div>
+      <div class="fullBrowserContainer">
+        <div class="browserContainer">
+          <div class="topBrowser">
+            <div class="tab">
+              <img src="/assets.html/testt.PNG" alt="" />
+              <p>Fun</p>
+            </div>
 
-<div class="browserContainer">
-    <div class="topBrowser">
-        <div class="tabs">
-        <img src="/assets.html/testt.PNG" alt="">
-        <p>Fun</p>
-    </div>
-       
-        <div class="xOut">
-        <img src="/assets.html/test2.PNG" alt="">
-    </div>
-    </div>
+            <div class="xOut">
+              <img src="/assets.html/test2.PNG" alt="" />
+            </div>
+          </div>
 
-    <div class="searchBar">
-        <img src="assets.html/testt3.PNG" alt="">
-        
-        <!---  How to make a "search bar" https://pagedart.com/blog/how-to-add-a-search-bar-in-html/  -->
-        <form id="form">
-            <input type="search" id="query" name="q"
-            placeholder="Best riddles of all time">
-        </form>
-    </div>
+          <div class="searchBar">
+            <img src="assets.html/testt3.PNG" alt="" />
 
-    <div class="browserPageContainer">
-        <div class="creds">
-            <h2>The Works of <br/> Hekuran & Mari</h2> 
+            <!---  How to make a "search bar" https://pagedart.com/blog/how-to-add-a-search-bar-in-html/  -->
+            <form id="form">
+              <input
+                type="search"
+                id="query"
+                name="q"
+                placeholder="Best riddles of all time"
+              />
+            </form>
+          </div>
+
+          <div class="browserPageContainer">
+            <div class="creds">
+              <h2>
+                The Works of <br />
+                Hekuran & Mari
+              </h2>
+            </div>
+
+            <div class="riddleContainer">
+              <h2>Can you solve the riddles?</h2>
+              <!-- div.cardContainer*2>p.firstClue+p.secondClue+p.thirdClue -->
+              <div class="cardContainer">
+                <div class="firstClueContainer">
+                  <p class="showClueOnHover1 hoverRiddle">
+                    Hover here for first clue.
+                  </p>
+                  <p class="firstClue clueRiddle">
+                    I am round, but not always round.
+                  </p>
+                </div>
+                <div class="secondClueContainer">
+                  <p class="showClueOnHover2 hoverRiddle">
+                    Hover here for second clue.
+                  </p>
+                  <p class="secondClue clueRiddle">
+                    I am light, sometimes dark.
+                  </p>
+                </div>
+                <div class="firstClueContainer">
+                  <p class="showClueOnHover3 hoverRiddle">
+                    Hover here for third clue.
+                  </p>
+                  <p class="thirdClue clueRiddle">
+                    Everyone wants to walk over me.
+                  </p>
+                </div>
+                <h3>What am I ?</h3>
+
+                <div class="answerContainer">
+                  <p class="showAnswerOnHover">Hover here for answer</p>
+                  <p class="answer">The Moon</p>
+                </div>
+              </div>
+              <div class="cardContainer">
+                <div class="firstClueContainer2">
+                  <p class="showClueOnHover1 hoverRiddle">
+                    Hover here for first clue
+                  </p>
+                  <p class="firstClue clueRiddle">
+                    The more you code, the more of me there is.
+                  </p>
+                </div>
+                <div class="secondClueContainer2">
+                  <p class="showClueOnHover2 hoverRiddle">
+                    Hover here for second clue
+                  </p>
+                  <p class="secondClue clueRiddle">
+                    I may be gone for now but you can’t get rid of me forever
+                  </p>
+                </div>
+                <h3>What am I ?</h3>
+                <div class="answerContainer">
+                  <p class="showAnswerOnHover">Hover here for answer</p>
+                  <p class="answer">A bug</p>
+                  <img
+                    class="answer"
+                    src="/assets.html/bug.png"
+                    alt="Programming bug on a website"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-    <div class="riddleContainer">
-        <h2>Can you solve the riddles?</h2>
-        <!-- div.cardContainer*2>p.firstClue+p.secondClue+p.thirdClue -->
-        <div class="cardContainer">
-         
-          <div class="firstClueContainer">
-            <p class="showClueOnHover1 hoverRiddle">Hover here for first clue.</p>
-            <p class="firstClue clueRiddle">I am round, but not always round.</p>
-          </div>
-          <div class="secondClueContainer">
-            <p class="showClueOnHover2 hoverRiddle">Hover here for second clue.</p>
-            <p class="secondClue clueRiddle">I am light, sometimes dark.</p>
-          </div>
-          <div class="firstClueContainer">
-            <p class="showClueOnHover3 hoverRiddle">Hover here for third clue.</p>
-            <p class="thirdClue clueRiddle">Everyone wants to walk over me.</p>
-          </div>
-          <h3>What am I ?</h3>
-  
-          <div class="answerContainer">
-            <p class="showAnswerOnHover">Hover here for answer</p>
-            <p class="answer">The Moon</p>
-          </div>
-        </div>
-        <div class="cardContainer">
-          <div class="firstClueContainer2">
-            <p class="showClueOnHover1 hoverRiddle">Hover here for first clue</p>
-            <p class="firstClue clueRiddle">The more you code, the more of me there is.</p>
-          </div>
-          <div class="secondClueContainer2">
-            <p class="showClueOnHover2 hoverRiddle">Hover here for second clue</p>
-            <p class="secondClue clueRiddle">I may be gone for now but you can’t get rid of me forever</p>
-          </div>
-          <h3>What am i ?</h3>
-          <div class="answerContainer">
-            <p class="showAnswerOnHover">Hover here for answer</p>
-            <p class="answer">A bug </p>
-            <img class="answer" src="/assets.html/bug.png" alt="Programming bug on a website">
-            
-          </div>
-          </div>
-          </div>
-
-
-
-
-</div>
-
-<div>
-
-</div>
-
-</div>
-
-
-
-</body>
+      </div>
+    </div>
+  </body>
 </html>

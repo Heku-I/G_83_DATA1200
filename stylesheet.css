@@ -232,8 +232,8 @@ opacity: 1;
 }
 
 
-
-@media screen and (min-width: 1024px)  { /*Adjusting responsiveness for small laptop screen */ 
+/*Adjusting responsiveness for small laptop screen */ 
+@media screen and (min-width: 1024px)  { 
 
 .Test{
     display: flex;
@@ -251,8 +251,8 @@ opacity: 1;
 
 
 }
-
-@media screen and (min-width:1440px) { /*Adjusting responsiveness for large laptop screen */ 
+/*Adjusting responsiveness for large laptop screen */
+@media screen and (min-width:1440px) {  
     .under{
         display: flex;
         margin-top: 30%;
@@ -328,7 +328,8 @@ opacity: 1;
     object-position: bottom;
 }
 
-@media screen and (min-width: 1024px)  { /*For small laptop screen */ 
+/*Adjusting reponsiveness for small laptop screen */
+@media screen and (min-width: 1024px)  {  
 
 .articleWithImage{
     display: flex;
@@ -369,7 +370,7 @@ flex-basis: 400%;
 }
 
 
-@media screen and (min-width:1440px) { /*For large laptop screen */ 
+@media screen and (min-width:1440px) { /*For larger laptop screen */ 
     
 
 }
@@ -381,36 +382,79 @@ flex-basis: 400%;
 
 body, html{
     height: 100%;
+   
 }
 
 .mainFunContainer{
-display: flex;
-align-items: center;
-justify-content: center;
+/* justify-content: center; */
 background-image: url(/assets.html/BackgroundImage.jpg);
 background-repeat: no-repeat;
 background-color: rgb(192, 225, 236); /*Replacement background-color*/ 
 height: 100%;
 
 /* Perfecting the background image */ 
-
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 position: relative;
+
 }
+
+
+/* Styling the navigation menu */ 
+
+.funNavigation{
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+}
+
+.funNavLinks{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+}
+
+.funNavLinks li{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    
+}
+
+.funNavLinks a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color:white;
+
+}
+.funNavLinks img{
+    width: 65px;
+    height: auto;
+    
+}
+
+
+.fullBrowserContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 /*The browser size*/
 .browserContainer{
     background-color: #6E6E6E;
-    height: 60%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
 }
 
 /*Adjusting the browser width for larger resolution*/ 
 @media screen and (min-width:1024px) {
     .browserContainer{
-        width: 70%;
+        width: 85%;
     }
 }
 
@@ -425,14 +469,14 @@ position: relative;
     justify-content: space-between;
 }
 
-.tabs{
+.tab{
     display: flex;
     border-right:#bdb9b5 1px solid;
     padding-right: 15px;
     color: #bdb9b5 ;
     height: 25px;
 }
-.tabs img{
+.tab img{
     height: 30px;
     width: auto;   
 }
@@ -450,7 +494,7 @@ input{
     width:100%;
 }
 
-/*Styling the page inside the browser container */ 
+/*Styling the "page" inside the browser container */ 
 
 .browserPageContainer{
     display: flex;
@@ -459,7 +503,7 @@ input{
     color: #BCFD4C;
     overflow: auto;
     overflow-y:auto;
-    height: 550px;
+    height: 40em;
 }
 
 .creds{
@@ -469,7 +513,7 @@ input{
     position: sticky;
     overflow: hidden;
     top: 0;
-    margin-bottom: 6em;
+    margin-bottom: 1em;
 }
 .creds h2{
     font-size: 1rem;
@@ -482,12 +526,14 @@ input{
     margin: 0 auto;
     width: 60vw;
     text-align: center;
+    margin-bottom: 2em;
   }
+
+  /* Adjusting riddle width for larger screens */ 
   @media screen and (min-width:1024px){
       .riddleContainer{
           width: 35vw;
-      }
-      
+      }      
   }
   
   .cardContainer {
