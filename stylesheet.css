@@ -276,7 +276,7 @@ html {
   font-family: "Montserrat, sans-serif";
   gap: 2em;
   padding: 1em 1em;
-  height: 100%;
+  min-height: 100%;
 }
 
 .infoArticle {
@@ -304,7 +304,7 @@ html {
 .mainContainer img {
   margin-top: 2em;
   width: 100%;
-  height: auto;
+  height:auto;
   object-fit: cover;
   object-position: bottom;
 }
