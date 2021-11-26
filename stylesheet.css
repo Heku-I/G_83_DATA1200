@@ -374,7 +374,7 @@ body {
 
 .mainFunContainer {
   /* justify-content: center; */
-  background-image: url(assets.html/BackgroundImage.jpg);
+  background-image: url(./assets.html/BackgroundImage.jpg);
   background-repeat: no-repeat;
   background-color: rgb(192, 225, 236); /*Replacement background-color*/
   height: 100%;
