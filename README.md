@@ -1,31 +1,6 @@
 # G_83_DATA1200
 
-FRIST: 26.11.21
-
-
-Notater: 
-
-Farge: Neon-grønn, grå og hvit. 
-Font: Montserrat, sans-serif 
-
-
-[OK] Har laget alle sidene med relevant innhold. ** Mangler tekst på refleksjon ** 
-[X] God struktur på siden. 
-[OK] Lett navigerbar
-[X] Er siden responsive?
-[X] Kjøre automated test. Noen feilmeldinger? 
-[X]  Er koden strukturert godt? Er den forståelig? 
-
-
-Oppgaver til i morgen: 
-[OK]Fikse footer!!
-Gå gjennom det øverste på CSS-filen
-Rename noen klasser.
-Gjør siden enda mer responsive.
-Fikse bilde på information!
-Vurdere større fontstørrelse på større skjermer.
-Vurdere om å legge til bilder på Accessability. 
-Vurdere om å legge til tilbake "knapp" på fun-page. 
+DEADLINE: 26.11.21 17:00
 
 
 TASK: 

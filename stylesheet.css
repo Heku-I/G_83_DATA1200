@@ -1,43 +1,51 @@
+/*Overall setting*/ 
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
+/* Setting height and background color for safety on body and html */ 
+body,
+html {
+  height: 100%;
+  background-color: #bcfd4c;
+}
+
+/*Setting general font-size for headers */ 
 h1 {
-  /* Må korrigeres */
-  margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 1.953rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 
 h5 {
   font-size: 1.25rem;
 }
 
+/* Further general adjustments on the font */ 
 h1,
 h2,
 h3,
-h4,
-h5 {
-  margin: 0rem 0 1.38rem;
+h4{
+  margin: 0 0 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.3;
 }
 p {
   margin-bottom: 1rem;
+  font-size: 17px;
 }
 
 body {
@@ -45,25 +53,22 @@ body {
   font-weight: 400;
 }
 
+/* Adjusting for larger screen */ 
 @media screen and (min-width: 1024px) {
   p {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
-
+/* Adjusting for even larger screen */
 @media screen and (min-width: 1440px) {
   p {
     font-size: 18px;
   }
 }
 
-body,
-html {
-  height: 100%;
-  background-color: #bcfd4c;
-}
 
-/* NAVIGATION BAR BELOW */
+/* NAVIGATION BAR BELOW 
+(For index, topicalinformation, accessability and reflection) */
 
 .navContainer {
   display: flex;
@@ -71,7 +76,6 @@ html {
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
-
 
 .UpperNav { 
   margin: 1em 0;
@@ -131,7 +135,8 @@ html {
 @media screen and (min-width: 1440px) {
 }
 
-/* FOOTER BELOW */
+/* FOOTER BELOW
+(For index, topicalinformation, accessability and reflection) */
 
 .footerContainer {
   display: flex;
@@ -145,13 +150,34 @@ html {
 
 .footerText {
   align-self: center;
+  font-weight: bold;
 }
 
 .jigsawValidator{
     flex-direction: row;
 }
 
-/* -- INDEX PAGE -- */
+/* mainContainer 
+(For index, topicalinformation, accessability and reflection) */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #6e6e6e;
+  color: white;
+  font-family: "Montserrat, sans-serif";
+  gap: 2em;
+  padding: 1em 1em;
+  min-height: 100%;
+}
+.mainContainer img {
+  margin-top: 2em;
+  width: 100%;
+  height:auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* -- SPECIFICS FOR INDEX PAGE -- */
 
 #headline {
   margin: 3em 1em;
@@ -191,18 +217,19 @@ html {
   object-position: bottom;
 }
 
-.under {
+/* Styling the links in index page */ 
+.mainLinks {
   display: flex;
   font-family: "Montserrat", sans-serif;
 }
 
-.under ul {
+.mainLinks ul {
   display: flex;
   flex-direction: row;
   margin-top: 1.5em;
   gap: 3em;
 }
-.under li {
+.mainLinks li {
   display: flex;
   flex-direction: row;
   background-color: #bcfd4c;
@@ -213,7 +240,7 @@ html {
   border-radius: 5%;
   opacity: 0.75;
 }
-.under a {
+.mainLinks a {
   text-decoration: none;
   color: #6e6e6e;
   font-size: 24px;
@@ -221,20 +248,20 @@ html {
   font-weight: bold;
 }
 
-.under li:last-of-type {
+.mainLinks li:last-of-type {
   border: #bcfd4c 3px solid;
   background-color: #6e6e6e;
 }
 
-.under li:last-of-type a {
+.mainLinks li:last-of-type a {
   color: #bcfd4c;
 }
 
-.under li:hover {
+.mainLinks li:hover {
   opacity: 1;
 }
 
-/*Adjusting responsiveness for small laptop screen */
+/* Index Specific adjusting responsiveness for small laptop screen*/
 @media screen and (min-width: 1024px) {
   .Test {
     display: flex;
@@ -243,6 +270,7 @@ html {
     margin-top: 1.5em;
     align-self: flex-start;
     flex: 5;
+
   }
   .indexImage {
     flex: 4.5;
@@ -250,7 +278,7 @@ html {
     margin-top: 0;
   }
 }
-/*Adjusting responsiveness for large laptop screen */
+/* Index Specific Adjusting responsiveness for large laptop screen */
 @media screen and (min-width: 1440px) {
   .under {
     display: flex;
@@ -259,6 +287,7 @@ html {
   #headline {
     justify-content: center;
     align-self: center;
+    margin: 0 5em;
   }
 
   .indexImage {
@@ -266,21 +295,13 @@ html {
   }
 }
 
-/* -- TOPICAL INFORMATION PAGE -- */
-
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: #6e6e6e;
-  color: white;
-  font-family: "Montserrat, sans-serif";
-  gap: 2em;
-  padding: 1em 1em;
-  min-height: 100%;
-}
+/* -- SPECIFICS FOR TOPICAL INFORMATION AND ACCESSABILITY PAGE -- */
 
 .infoArticle {
-  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
   gap: 2em;
 }
 
@@ -295,19 +316,18 @@ html {
   text-decoration: none;
 }
 .infoArticle img {
+  max-width: 1200px;
+  height: auto;
 }
 
-/* -- ACCESSABILITY ESSAY PAGE -- */
-
-/* -- REFLECTION ESSAY PAGE -- */
-
-.mainContainer img {
-  margin-top: 2em;
-  width: 100%;
-  height:auto;
-  object-fit: cover;
-  object-position: bottom;
+/*Adjusting responsiveness for larger screen */
+@media screen and (min-width: 1024px) {
+  .infoArticle{
+    margin: 4em 10vw;
+  }
 }
+
+/* -- SPESIFICS FOR ACCESSABILITY AND REFLECTION PAGE -- */
 
 /*Adjusting reponsiveness for small laptop screen */
 @media screen and (min-width: 1024px) {
@@ -315,6 +335,7 @@ html {
     display: flex;
     flex-direction: row;
     gap: 2em;
+    margin: 2em 0;
   }
   .articleWithImage:last-of-type {
     flex-direction: row-reverse;
@@ -336,6 +357,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
+    margin: 1.5em 0 3em;
   }
 
   .conclusion {
@@ -343,18 +365,12 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
+    margin: 2em 0 3em;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  /*For larger laptop screen */
-}
 
-
-
-
-
-/* -- FUN PAGE BELOW -- */
+/* -- SPECIFICS FOR FUN PAGE BELOW -- */
 
 .mainFunContainer {
   /* justify-content: center; */
@@ -362,6 +378,7 @@ html {
   background-repeat: no-repeat;
   background-color: rgb(192, 225, 236); /*Replacement background-color*/
   height: 100%;
+  font-family: "Montserrat, sans-serif";
 
   /* Perfecting the background image */
   background-size: cover;
@@ -483,19 +500,19 @@ input {
   border-bottom: black solid 1px;
 }
 
+@media screen and (max-height: 820px) {
+  .browserPageContainer{
+    height: 35em;
+  }
+  
+}
+
 /* Design for riddle in the browser page */
 .riddleContainer {
   margin: 0 auto;
   width: 60vw;
   text-align: center;
   margin-bottom: 2em;
-}
-
-/* Adjusting riddle width for larger screens */
-@media screen and (min-width: 1024px) {
-  .riddleContainer {
-    width: 35vw;
-  }
 }
 
 .cardContainer {
@@ -549,5 +566,12 @@ input {
 .showAnswerOnHover:not(:hover) ~ .answer {
   transition: all 20s;
   opacity: 0;
+}
+
+/* Adjusting riddle width for larger screens */
+@media screen and (min-width: 1024px) {
+  .riddleContainer {
+    width: 35vw;
+  }
 }
 /* End of functionalty for showing / hiding clues and answer */

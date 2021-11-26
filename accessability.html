@@ -1,87 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Accessability Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--  NAVIGATION BAR BELOW  -->
-    <Header>
+    <header>
+      <nav class="navContainer">
+        <div class="UpperNav">
+          <h2>Our website</h2>
+        </div>
 
-        <nav class="navContainer">
-            
-            <div class="UpperNav">
-            <h2>Our website</h2>
-            </div>
-    
         <ul class="navigationList">
-            <li><a href="index.html"><p>Home</p></a></li>
-            <li><a href="topicalInformation.html"><p>Information</p></a></li>
-            <li class="activePage"> <a href="accessability.html"><p>Accessability</p></a></li>
-            <li><a href="reflection.html"><p>Reflection</p></a></li>
-            <li><a href="fun.html"><p>Fun</p></a></li>
+          <li>
+            <a href="index.html"><p>Home</p></a>
+          </li>
+          <li>
+            <a href="topicalInformation.html"><p>Information</p></a>
+          </li>
+          <li class="activePage">
+            <a href="accessability.html"><p>Accessability</p></a>
+          </li>
+          <li>
+            <a href="reflection.html"><p>Reflection</p></a>
+          </li>
+          <li>
+            <a href="fun.html"><p>Fun</p></a>
+          </li>
         </ul>
-        </nav>
-    
-    </Header>
+      </nav>
+    </header>
 
-<!--  MAIN CONTENT BELOW  -->
+    <!--  MAIN CONTENT BELOW  -->
 
-<div class="mainContainer">
+    <div class="mainContainer">
+      <article class="infoArticle">
+        <h2>Reflections on accessibility</h2>
 
-    <article class="infoArticle">
-    <h2>Reflections on accessibility</h2>
+        <p>
+          An important principle when designing for accessibility is that the
+          page should work for everyone, without need for adaptation. This is
+          something we wanted to implement when designing, and led to us making
+          certain decisions: one of them was the choice to use a sans-serif
+          font, to make it easier to read for everyone. We also made sure that
+          there were sufficient colour contrasts, to improve readability. One
+          last thing we did while coding, was to include captions for all
+          pictures, to make the use of a screen reader easier. We also tried to
+          make sure that the pages are structured in a logical way, with
+          informative headings that would make it logical to find the content
+          you are looking for, while using a screen reader. By taking these
+          steps, we are hoping to make a website that is accessible for
+          everyone.
+        </p>
 
-    <p>An important principle when designing for accessibility is that the page should work for everyone, without need for adaptation. 
-    This is something we wanted to implement when designing, and led to us making certain decisions: one of them was the choice to
-    use a sans-serif font, to make it easier to read for everyone. We also made sure that there were sufficient colour contrasts, to
-    improve readability. One last thing we did while coding, was to include captions for all pictures, to make the use of a
-    screen reader easier. We also tried to make sure that the pages are structured in a logical way, with informative headings that 
-    would make it logical to find the content you are looking for, while using a screen reader. 
-    By taking these steps, we are hoping to make a website that is accessible for everyone. 
-     </p>
+        <div>
+          <h3>The results from the automated test</h3>
 
-     <div>
-    <h3>The results from the automated test</h3>
+          <p>
+            We testet our code, both the HTML and the CSS, on
+            <a href="https://validator.w3.org/" target="_blank"
+              >the HTML validator</a
+            >
+            and
+            <a
+              href="https://jigsaw.w3.org/css-validator/validator"
+              target="_blank"
+              >CSS Validator</a
+            >. Our HTML code had one major flaw, that the index page had two
+            h1s. We though about changing The CSS code had no faults, according
+            to the test. Even so, we actualle made some changes. The most
+            important was to increase the font size, because we felt that it was
+            a bit small, even though the test found it fine.
+          </p>
 
-    <p>We testet our code, both the HTML and the CSS, on <a href="https://validator.w3.org/" target="_blank">the HTML validator</a> and
-         <a href="https://jigsaw.w3.org/css-validator/validator" target="_blank">CSS Validator</a>.
-        Our HTML code had one major flaw, that the index page had two h1s. We though about changing 
-        The CSS code had no faults, according to the test. Even so, we actualle made some changes. The most important was to increase the 
-        font size, because we felt that it was a bit small, even though the test found it fine. 
-    </p>
-    </div>
+          <img
+            src="/assets.html/cssValidator.PNG"
+            alt="showing validation of CSS-code"
+          />
+        </div>
 
-    <div>
-    <h3>What have we done beyond automated testing?</h3>
-    <p>As mentioned above, we actively thought about accessability when working on this page, in terms of font, shape and colour choices. 
-    This was in some ways a challenge, because we could not just choose what we thought looked good, but had to consider the readability.
-    At the same time, it made a lot of sense. Everyone likes information to be easy to understand, and font size, contrasts and other factors 
-    are a big part of that. A well designed page is an accessible page! We think that this mindset is the reason the CSS had no faults, 
-    according to the test. 
-    As this is a small project, we did not have time to test our website on many different users, which is something that might have
-    improved the accessibility, and given us more insight. Testing is a fundamental part of universal design. Even so, we feel that 
-    our combination of preparation, though process while coding, and automated testing have made us able to design a page that is in many ways 
-    accessible.</p>
-    </div>
-    </article>
-
+        <div>
+          <h3>What have we done beyond automated testing?</h3>
+          <p>
+            As mentioned above, we actively thought about accessability when
+            working on this page, in terms of font, shape and colour choices.
+            This was in some ways a challenge, because we could not just choose
+            what we thought looked good, but had to consider the readability. At
+            the same time, it made a lot of sense. Everyone likes information to
+            be easy to understand, and font size, contrasts and other factors
+            are a big part of that. A well designed page is an accessible page!
+            We think that this mindset is the reason the CSS had no faults,
+            according to the test. As this is a small project, we did not have
+            time to test our website on many different users, which is something
+            that might have improved the accessibility, and given us more
+            insight. Testing is a fundamental part of universal design. Even so,
+            we feel that our combination of preparation, though process while
+            coding, and automated testing have made us able to design a page
+            that is in many ways accessible.
+          </p>
+        </div>
+      </article>
     </div>
     <footer class="footerContainer">
-
-        <div class="footerText">
-            <p> &copy; Copyright M&H </p>
-            <p> Responsible: S364761 & S365325 </p>
-        </div>
-    
+      <div class="footerText">
+        <p>&copy; Copyright M&H</p>
+        <p>Responsible: S364761 & S365325</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
