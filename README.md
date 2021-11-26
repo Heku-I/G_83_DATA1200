@@ -2,6 +2,10 @@
 
 DEADLINE: 26.11.21 17:00
 
+Link to github page: 
+https://github.com/Donrani/G_83_DATA1200
+https://donrani.github.io/G_83_DATA1200/index.html
+
 
 TASK: 
 Your website will contain the following pages:
